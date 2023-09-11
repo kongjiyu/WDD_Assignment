@@ -1,0 +1,54 @@
+h1{
+   color: white;
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+
+h2{
+    padding-left: 10px;
+    color: white;
+}
+.alacat{
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    text-align: left;
+    background: transparent;
+    color: white;
+    
+    
+}
+#food{
+    padding-right: 50px;
+    float: left;
+    width:261px;
+    height:187px;
+}
+#wantan{
+    padding-right: 50px;
+    float: left;
+    width:260px;
+    height:180px;
+}
+#pork{
+    padding-right: 50px;
+    float: left;
+    width:260px;
+    height:180px;
+    margin-bottom: 10px;
+}
+#kweyteow{
+    padding-right: 50px;
+    float: left;
+    width:260px;
+    height:190px;
+    margin-bottom: 10px;
+}
+p{
+    padding: 10px;
+    color: white;
+}
+div{
+    border: 100px;
+    margin-bottom: 100px;
+}

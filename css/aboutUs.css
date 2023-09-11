@@ -1,0 +1,20 @@
+.article{
+    display: flex;
+}
+
+/*Makes text readable on dark background*/
+article {
+    color:rgb(255,255,255);
+    font-weight:bold;
+    font-size: 150%;
+}
+
+/*Creates 50px of distance between picture and text*/
+#tyz, #ngw {
+    padding-left:50px;
+}
+
+/*Creates border around aside element, temporary.*/
+aside{
+    border: 5px solid red;
+}

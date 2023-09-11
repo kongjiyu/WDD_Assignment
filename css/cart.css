@@ -1,0 +1,90 @@
+.total {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: 97%;
+    top: 15px;
+    padding: 3px 10px;
+}
+
+.cart-toggle{
+
+}
+
+#cart-page {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 40px 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: red;
+}
+
+#cart-page table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cart-page table thead td {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#total-amount {
+    display: none;
+}
+
+#cart-page table tbody td {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+#cart-page table tbody button {
+    margin: 0 5px;
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 0px 16px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#cart-page table tbody button:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+#cart-page table tbody img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+#checkout {
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#total-price, #n-total-item {
+    font-size: 25px;
+    color: black;
+}
+
+#total-item {
+    text-align: right;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Header</title>
+    <link href="../css/header.css" rel="stylesheet"/>
+    <link href="../css/alacat.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="#"><img src="../image/logo.png"/></a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Offer</a>
+            <button id="login" class="btnLogin-popup">Membership</button>
+            <button id="cart" href="#"><img src="../image/cart.png"></button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email" placeholder="" required />
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
+                    <input type="text" placeholder="" required />
+                    <label>Username<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email"  placeholder="" required/>
+                    <label>Email<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password<span id="required">*</span></label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" />I agree to the terms & conditions<span id="required">*</span></label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+     <article>
+    
+
+        <div class="alacat">
+            <h1><i>ALACAT</i></h1>
+            <h2><i>PRAWN MEE</i></h2>
+            <p id="prawnmee">
+                <img src="../image/prawnmee.png" alt="mee"  id="food">
+                Price &nbsp;:&nbsp;RM10.00 <br><br>
+                Introduce &nbsp;:
+                The Penang variant can be easily distinguished from the 
+                other variants by its characteristic spicy prawn broth. It primarily consists of rice 
+                vermicelli and thicker yellow egg noodles, while the broth is made with prawn heads and shells, 
+                and pork ribs.Sliced prawns or shrimps are also added into the dish, along with pork slices, hard 
+                boiled eggs, and kangkung . Some of the Hokkien Mee are served with bean sprouts, fried shallots, 
+                lard and sambal too. In Penang, pig skin, an ingredient rarely served in Kuala Lumpur, is a 
+                common topping as well.
+            </p>
+        </div>
+        <div>
+            <h2><i>WANTAN MEE</i></h2>
+            <p id="wantanmee">
+             <img src="../image/wantanmee.jpg" alt="wantanmee" id="wantan"> 
+                Price &nbsp;:&nbsp;RM10.00 <br><br>
+                Introduce &nbsp;:
+                The dish usually consists of egg noodles served in a hot broth, garnished with leafy vegetables 
+                and wonton dumplings. The types of leafy vegetables used are usually gai-lan, also known as Chinese 
+                broccoli or Chinese kale. Another type of dumpling known as shui jiao (水餃) is sometimes served in 
+                place of wonton. 
+            </p>
+        </div>
+        <div>
+            <h2>PORK NOODLE</h2>
+            <p id="porknoodle">
+            <img src="../image/porknoodle.jpg" alt="porknoodle" id="pork">
+            Price &nbsp;:&nbsp;RM10.00 <br><br>
+            Introduce &nbsp;:
+            It mainly uses kway teow, fish balls and fish cakes as the main ingredients. 
+            Adding the soup made with pork bones gives him a delicious and sweet soup base.
+            </p>
+        </div>
+
+        <div>
+            <h2>CHAR KWEY TEOW </h2>
+            <p> 
+            <img src="../image/charkwaytiao.jpg" alt="charkwaytiao" id="kweyteow" style="padding-top: 10px;">
+            Price &nbsp;:&nbsp;RM10.00 <br><br>
+            Introduce &nbsp;:
+            It is made from flat rice noodles or kway teow of approximately 1 cm or about 0.5 cm 
+            in width, stir-fried over very high heat with garlic, light and dark soy sauce, 
+            chilli paste, whole prawns, shelled blood cockles, chopped Chinese chives, slices of 
+            Chinese sausage, and bean sprouts.
+            </p>
+
+        </div>
+     </article>
+
+
+    <script src="../javaScript/header.js"></script>
+</body>
+</html>
