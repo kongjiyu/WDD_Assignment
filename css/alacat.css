@@ -44,11 +44,12 @@ h2{
     height:190px;
     margin-bottom: 10px;
 }
-p{
+article p{
     padding: 10px;
     color: white;
 }
-div{
+article div{
     border: 100px;
     margin-bottom: 100px;
 }
+
