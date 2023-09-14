@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -19,7 +20,7 @@ body{
     margin-left: 20px;
 }
 
-header{
+.mainHeader{
     overflow: hidden;
     padding:5px 10px 15px 10px;
     width:100%;
@@ -29,6 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 #login{
@@ -76,8 +78,9 @@ nav a{
     transition: border 0.3s ease;
 }
 
-#cart:hover{
-    border: 2px solid white;
+a#cart:hover {
+    background-color: white;
+    fill: #ca2739;
 }
 
 
@@ -101,10 +104,12 @@ nav a:hover::after{
 .wrapper{
     color: white;
     position: fixed;
-    left: 40%;
-    top: 25%;
+    left: 50%;
+    top: 50%;
     width: 400px;
     height: 440px;
+    margin-left: -200px;
+    margin-top: -220px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -116,6 +121,7 @@ nav a:hover::after{
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
+    z-index: 2;
 }
 
 .wrapper.active-popup{
@@ -269,9 +275,4 @@ label span{
 
 .login-register p a:hover{
     text-decoration: underline;
-}
-
-.aboutus{
-    clear:left;
-    color: white;
 }
