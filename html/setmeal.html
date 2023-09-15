@@ -1,0 +1,157 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Header</title>
+    <link href="../css/header.css" rel="stylesheet"/>
+    <link href="../css/setmeal.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="#"><img src="../image/logo.png"/></a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Offer</a>
+            <button id="login" class="btnLogin-popup">Membership</button>
+            <button id="cart" href="#"><img src="../image/cart.png"></button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email" placeholder="" required />
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
+                    <input type="text" placeholder="" required />
+                    <label>Username<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email"  placeholder="" required/>
+                    <label>Email<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password<span id="required">*</span></label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" />I agree to the terms & conditions<span id="required">*</span></label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <section class="backwrapper">
+        <div class="style">
+            <h1 class="frist"><span>SET</span>MENU</h1>
+            <p>The meal packages are divided into four sets, namely the Prawn Noodle Set, 
+                Wantan Mee Set, Pork Noodle Set, and Fried Kway Teow Set. 
+                Customers can choose one drink and one set dish from the following list 
+                in each of these packages.
+            </p>
+            <br>
+            <br>
+            <br>
+            <form action="#" method="post">
+                <div>
+                <label for="prawnmee">Prawnmee</label>
+                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+                 </div>
+                 <div>
+                <label for="prawnmee">Prawnmee</label>
+                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+                 </div>
+                <div>
+                <label for="prawnmee">Prawnmee</label>
+                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+                </div>
+                <div>
+                <label for="prawnmee">Prawnmee</label>
+                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <fieldset id="drink">
+                <legend>DRINK</legend>
+                <div>                   
+                    <label>Soya-bean</label>
+                    <input type="radio" id="soya-bean">  
+                    <br>                 
+                    <label>Soya-bean</label>
+                    <input type="radio" id="soya-bean">    
+                    <br>               
+                    <label>Soya-bean</label>
+                    <input type="radio" id="soya-bean"> 
+                    <br>                  
+                    <label>Soya-bean</label>
+                    <input type="radio" id="soya-bean">   
+                    <br>                
+                    <label>Soya-bean</label>
+                    <input type="radio" id="soya-bean">
+                </div>                
+                </fieldset>
+                <fieldset id="setdish">
+                    <legend>SET DISH</legend>
+                    <div>                   
+                        <label>Soya-bean</label>
+                        <input type="radio" id="soya-bean">
+                        <br>
+                        <label>Soya-bean</label>
+                        <input type="radio" id="soya-bean">   
+                        <br>        
+                        <label>Soya-bean</label>
+                        <input type="radio" id="soya-bean">   
+                        <br>    
+                        <label>Soya-bean</label>
+                        <input type="radio" id="soya-bean">  
+                        <br>                
+                        <label>Soya-bean</label>
+                        <input type="radio" id="soya-bean">
+                    </div>                
+                </fieldset>
+                <br>
+                <input type="submit" value="ADD TO CART">
+            </form>
+
+
+        </div>
+    </section>
+    <script src="../javaScript/header.js"></script>
