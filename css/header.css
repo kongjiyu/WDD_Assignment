@@ -66,6 +66,7 @@ nav a{
 }
 
 a#cart{
+    fill:white;
     border: 2px solid transparent;
     border-radius: 50px;
     position: relative;
