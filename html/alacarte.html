@@ -7,6 +7,7 @@
     <title>Header</title>
     <link href="../css/header.css" rel="stylesheet"/>
     <link href="../css/alacarte.css" rel="stylesheet" />
+    <link href="../css/cart.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,9 +20,7 @@
             <a class="bottomLine" href="#">Offer</a>
             <button id="login" class="btnLogin-popup">Membership</button>
             <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
-            <div>
-                <span class="total">0</span>
-            </div>
+            <div class="total" id="total">0</div>
         </nav>
     </header>
 
@@ -85,53 +84,23 @@
     <div class="title">
         <h4><span>ALACARTE</span>MENU</h4>
     </div>
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="single-menu">
-            <img src="../image/newPrawnmee.jpg" alt="prawnmee" id="prawnmee">
+            <img src="../image/newPrawnmee.jpg" alt="prawnmee">
             <div class="menu-content">
                 <h4>PRAWN MEE<span>RM10.00</span></h4>
                 <p>It primarily consists of rice 
                     vermicelli and thicker yellow egg noodles, while the broth is made with prawn heads and shells, 
                     and pork ribs.Sliced prawns or shrimps are also added into the dish, along with pork slices, hard 
                     boiled eggs, and kangkung .</p>
-                    <input type="submit" value="ADD TO CART">
+                    <button id="prawnmee" class="addToCart">Add To Cart</button>
+                    <div id="prawnmee">0</div>
             </div>
         </div>
-        <div class="single-menu">
-            <img src="../image/Newwantanmee.jpg" alt="prawnmee">
-            <div class="menu-content">
-                <h4>WANTAN MEE<span>RM10.00</span></h4>
-                <p>The dish usually consists of egg noodles served in a hot broth, garnished with leafy vegetables 
-                    and wonton dumplings. The types of leafy vegetables used are usually gai-lan, also known as Chinese 
-                    broccoli or Chinese kale. Another type of dumpling known as shui jiao (水餃) is sometimes served in 
-                    place of wonton. </p>
-                    <input type="submit" value="ADD TO CART">
-            </div>
-        </div>
-        <div class="single-menu">
-            <img src="../image/Newporknoodle.jpg" alt="prawnmee">
-            <div class="menu-content">
-                <h4>PORK NOODLE<span>RM10.00</span></h4>
-                <p>It mainly uses kway teow, fish balls and fish cakes as the main ingredients. 
-                    Adding the soup made with pork bones gives him a delicious and sweet soup base.
-                </p>
-                <input type="submit" value="ADD TO CART">
-            </div>
-        </div>
-        <div class="single-menu">
-            <img src="../image/Newcharkwayteow.jpg" alt="prawnmee">
-            <div class="menu-content">
-                <h4>CHAR KWEY TEOW<span>RM10.00</span></h4>
-                <p>It is made from flat rice noodles or kway teow of approximately 1 cm or about 0.5 cm 
-                    in width, stir-fried over very high heat with garlic, light and dark soy sauce, 
-                    chilli paste, whole prawns, shelled blood cockles, chopped Chinese chives, slices of 
-                    Chinese sausage, and bean sprouts.
-                </p>
-                <input type="submit" value="ADD TO CART">
-            </div>
-        </div>
+        
     </div>
 </div>
 <script src="../javaScript/header.js"></script>
+<script src="../javaScript/alacarte.js"></script>
     </body>
     </html>
