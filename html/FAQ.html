@@ -1,0 +1,130 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frequently Asked Questions</title>
+    <link href="../css/header.css" rel="stylesheet"/>
+    <link href="../css/FAQ.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="#"><img src="../image/logo.png"/></a>
+        <nav>
+            <a href="header.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Offer</a>
+            <button id="login" class="btnLogin-popup">Membership</button>
+            <button id="cart" href="#"><img src="../image/cart.png"></button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email" placeholder="" required />
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
+                    <input type="text" placeholder="" required />
+                    <label>Username<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email"  placeholder="" required/>
+                    <label>Email<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password<span id="required">*</span></label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" />I agree to the terms & conditions<span id="required">*</span></label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section>
+        <h1 class="main-title">FAQs</h1>
+        <div class="content">
+            <div class="q">
+                <h3>How do I know my online order went through?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L38 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="a">
+                <p>An SMS notification will be sent to your phone number as an order confirmation. Your order's basic details,
+                    such as the price, the content, etc should also be available in the message. If you have signed up for membership,
+                    and email will be sent to you as well.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="q">
+                <h3>What benefits do I get from the membership?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L38 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="a">
+                <p>As you spend money in LetYouEatMyNoodle, you will collect points equivalent to the amount of money you spend. Once enough points
+                    have been collected, you can redeem for gifts such as coupons, company merch, or even a free bowl of your choice! What's more,
+                    signing up for membership is completely free! Just make sure to spend the points before they disappear after two months!
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="q">
+                <h3>How do I refund or edit an order after placing it?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L38 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="a">
+                <p>Please call our LetYouEatMyNoodle Customer Service Number at +601-0240-7930 to edit or cancel your order.
+                    At minimum, your call should be made 10 minutes before the order arrives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../javaScript/header.js"></script>
+    <script src="../javaScript/FAQ.js"></script>
+</body>
+</html>
