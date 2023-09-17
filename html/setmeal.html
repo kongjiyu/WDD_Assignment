@@ -10,25 +10,20 @@
 </head>
 
 <body>
-    <header class="mainHeader">
+    <header>
         <a id="logo" href="#"><img src="../image/logo.png"/></a>
         <nav>
-            <a class="bottomLine" href="home.html">Home</a>
-            <a class="bottomLine" href="aboutUs.html">About Us</a>
-            <a class="bottomLine" href="menu.html">Menu</a>
-            <a class="bottomLine" href="#">Offer</a>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Offer</a>
             <button id="login" class="btnLogin-popup">Membership</button>
-            <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
-            <div>
-                <span class="total">0</span>
-            </div>
+            <button id="cart" href="#"><img src="../image/cart.png"></button>
         </nav>
     </header>
-
-    
-
     <div class="wrapper">
         <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
+
         <div class="form-box login">
             <h2>Login</h2>
             <form action="#" method="post" target="_blank">
@@ -94,62 +89,71 @@
             <br>
             <br>
             <form action="#" method="post">
-                <div>
-                <label for="prawnmee">Prawnmee</label>
-                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
-                 </div>
-                 <div>
-                <label for="prawnmee">Prawnmee</label>
-                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
-                 </div>
-                <div>
-                <label for="prawnmee">Prawnmee</label>
-                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+            <div id="orderselect">
+                <div class="boderMenu" id="imagestyle">
+                <img src="../image/newPrawnmee.jpg" alt="prawnmee" >
+                <br>
+                <label for="prawnmeemenu">Prawnmee</label>
+                <input type="number" name="Prawnmee" id="prawnmeemenu" min="0" max="5" value="0"/>
                 </div>
-                <div>
-                <label for="prawnmee">Prawnmee</label>
-                <input type="number" name="Prawnmee" id="prawnmee" min="0" max="5" value="0"/>
+                <div class="boderMenu" id="imagestyle">
+                <img src="../image/Newwantanmee.jpg" alt="wantanmee" id="Wantan">
+                <br>
+                <label for="WanTanMee">WanTanMee</label>
+                <input type="number" name="WanTanMee" id="WanTanMee" min="0" max="5" value="0"/>
                 </div>
+                <div class="boderMenu" id="imagestyle">
+                <img src="../image/Newporknoodle.jpg" alt="porknoodle" >
                 <br>
+                <label for="PorkNoodle">PorkNoodle</label>
+                <input type="number" name="porkNoodle" id="porkNoodle" min="0" max="5" value="0"/>
+                </div>
+
+            <div class="boderMenu" id="imagestyle">
+                <img src="../image/Newcharkwayteow.jpg" alt="porknoodle" >
                 <br>
-                <br>
+                <label for="charkwayteow">charkwayteow</label>
+                <input type="number" name="charkwayteow" id="charkwayteow" min="0" max="5" value="0"/>
+            </div>
+            </div>
+                
 
                 <fieldset id="drink">
                 <legend>DRINK</legend>
                 <div>                   
                     <label>Soya-bean</label>
-                    <input type="radio" id="soya-bean">  
+                    <input type="radio" name="soya-bean">  
                     <br>                 
                     <label>Soya-bean</label>
-                    <input type="radio" id="soya-bean">    
+                    <input type="radio" name="soya-bean">    
                     <br>               
                     <label>Soya-bean</label>
-                    <input type="radio" id="soya-bean"> 
+                    <input type="radio" name="soya-bean"> 
                     <br>                  
                     <label>Soya-bean</label>
-                    <input type="radio" id="soya-bean">   
+                    <input type="radio" name="soya-bean">   
                     <br>                
                     <label>Soya-bean</label>
-                    <input type="radio" id="soya-bean">
+                    <input type="radio" name="soya-bean">
                 </div>                
                 </fieldset>
                 <fieldset id="setdish">
                     <legend>SET DISH</legend>
                     <div>                   
                         <label>Soya-bean</label>
-                        <input type="radio" id="soya-bean">
-                        <br>
+                        <input type="radio" name="soya-bean">  
+                        <br>                 
                         <label>Soya-bean</label>
-                        <input type="radio" id="soya-bean">   
-                        <br>        
+                        <input type="radio" name="soya-bean">    
+                        <br>               
                         <label>Soya-bean</label>
-                        <input type="radio" id="soya-bean">   
-                        <br>    
+                        <input type="radio" name="soya-bean"> 
+                        <br>                  
                         <label>Soya-bean</label>
-                        <input type="radio" id="soya-bean">  
+                        <input type="radio" name="soya-bean">   
                         <br>                
                         <label>Soya-bean</label>
-                        <input type="radio" id="soya-bean">
+                        <input type="radio" name="soya-bean">
                     </div>                
                 </fieldset>
                 <br>
