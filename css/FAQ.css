@@ -1,6 +1,14 @@
 .main-title {
     font-weight:bold;
     font-size: 3rem;
+    text-decoration-line:underline;
+}
+
+.subtitle {
+    padding-top: 10px;
+    align-items:right;
+    font-weight:bold;
+    font-size: 2.3rem;
 }
 
 
@@ -16,11 +24,12 @@ section {
 }
 
 .content {
-    max-width: 700px;
+    max-width: 800px;
     margin-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px double white;
     cursor: pointer;
+    align-items: center;
 }
 
 .q {
@@ -52,3 +61,4 @@ section {
     max-height: 300px;
     animation: fadeIn 1.5s
 }
+
