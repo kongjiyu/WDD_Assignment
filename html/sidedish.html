@@ -1,0 +1,163 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sidedish</title>
+    <link href="../css/header.css" rel="stylesheet"/>
+    <link href="../css/cart.css" rel="stylesheet" />
+    <link href="../css/sidedish.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="mainHeader">
+        <a id="logo" href="#"><img src="../image/logo.png"/></a>
+        <nav>
+            <a class="bottomLine" href="home.html">Home</a>
+            <a class="bottomLine" href="aboutUs.html">About Us</a>
+            <a class="bottomLine" href="menu.html">Menu</a>
+            <a class="bottomLine" href="#">Offer</a>
+            <button id="login" class="btnLogin-popup">Membership</button>
+            <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
+            <div class="total" id="total">0</div>
+        </nav>
+    </header>
+
+    
+
+    <div class="wrapper">
+        <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email" placeholder="" required />
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#" method="post" target="_blank">
+                <div class="input-box">
+                    <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
+                    <input type="text" placeholder="" required />
+                    <label>Username<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
+                    <input type="email"  placeholder="" required/>
+                    <label>Email<span id="required">*</span></label>
+                </div>
+                <div class="input-box">
+                    <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
+                    <input type="password" placeholder="" required />
+                    <label>Password<span id="required">*</span></label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" />I agree to the terms & conditions<span id="required">*</span></label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="backwrapper">
+    <div class="title">
+        <h4><span>Side Dish</span>MENU</h4>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="single-menu">
+            <img src="../image/gyoza.jpg" alt="gyoza">
+            <div class="menu-content">
+                <h4>Gyoza<span>RM6.00</span></h4>
+                <p>Japanese-style bite-sized pockets of deliciousness that filled with a savory mixture of ground meat (such as pork or chicken), 
+                    cabbage, garlic, and ginger, wrapped in a thin dough. Crispy bottom while keeping the filling tender and
+                    juicy and combination of flavors and textures is simply irresistible. Dip them in a tangy soy-based sauce, 
+                    and you're in for a taste sensation that will leave you craving more. </p>
+                    <button id="gyoza" class="addToCart">Add To Cart</button>
+                    <div id="gyoza">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="single-menu">
+            <img src="../image/chicken-popcorn.jpg" alt="chickenpopcorn">
+            <div class="menu-content">
+                <h4>chicken Popcorn<span>RM5.00</span></h4>
+                <p> American-style bite-sized delight with its crispy exterior and juicy, tender interior that satisfies your cravings.
+                     Perfect for parties or as a quick snack, these little nuggets of goodness bring joy to any occasion. 
+                     So grab a handful and enjoy the irresistible taste of chicken popcorn.</p>
+                    <button id="chickenpopcorn" class="addToCart">Add To Cart</button>
+                    <div id="chickenpopcorn">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="single-menu">
+            <img src="../image/fried-tofu.jpg" alt="friedtofu">
+            <div class="menu-content">
+                <h4>Fried Tofu<span>RM5.00</span></h4>
+                <p> A crispy exterior and soft, silky interior and delicious vegetarian option that can be marinated in flavorful sauces or seasoned with aromatic spices.
+                    It can be enjoyed on its own as a snack, added to noodles or used as a substitute in various dishes. 
+                    So, if you're looking for a tasty and satisfying plant-based option, give fried tofu a try.</p>
+                    <button id="friedtofu" class="addToCart">Add To Cart</button>
+                    <div id="friedtofu">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="single-menu">
+            <img src="../image/spring-rolls.jpg" alt="springrolls">
+            <div class="menu-content">
+                <h4>Spring Rolls<span>RM7.00</span></h4>
+                <p> crispy and flavorful delights that filled with a medley of fresh vegetables, fragrant herbs bring a taste of Asia to your plate. 
+                    Wrapped in a thin, translucent rice paper and then fried or served fresh, dip them in a tangy sauce, 
+                    spring rolls offer a delightful combination of textures and a burst of vibrant flavors. </p>
+                    <button id="springrolls" class="addToCart">Add To Cart</button>
+                    <div id="springrolls">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="single-menu">
+            <img src="../image/tempura.jpg" alt="tempura">
+            <div class="menu-content">
+                <h4>Tempura<span>RM6.00</span></h4>
+                <p> A crispy and delightful Japanese dish that coats various ingredients like shrimp, vegetables, or even tofu, creating a satisfying crunch. 
+                    Dip each piece into a special sauce and experience a harmonious blend of umami and crispiness. 
+                    whether enjoyed as an appetizer or part of a meal.</p>
+                    <button id="chickenpopcorn" class="addToCart">Add To Cart</button>
+                    <div id="chickenpopcorn">0</div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="../javaScript/header.js"></script>
+<script src="../javaScript/alacarte.js"></script>
+    </body>
+    </html>
