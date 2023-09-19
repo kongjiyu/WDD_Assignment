@@ -8,21 +8,21 @@
     <link href="../css/header.css" rel="stylesheet"/>
     <link href="../css/cart.css" rel="stylesheet" />
     <link href="../css/home.css" rel="stylesheet" />
+    <script src="../javaScript/header.js" defer></script>
+    <script src="../javaScript/home.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="mainHeader">
         <a id="logo" href="#"><img src="../image/logo.png"/></a>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="alacat.html">Menu</a>
-            <a href="#">Offer</a>
+            <a class="bottomLine" href="home.html">Home</a>
+            <a class="bottomLine" href="aboutUs.html">About Us</a>
+            <a class="bottomLine" href="menu.html">Menu</a>
+            <a class="bottomLine" href="#">Offer</a>
             <button id="login" class="btnLogin-popup">Membership</button>
-            <button id="cart" href="cart.html"><img src="../image/cart.png"></button>
-            <div>
-                <span class="total">0</span>
-            </div>
+            <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
+            <div class="total" id="total">0</div>
         </nav>
     </header>
 
@@ -145,7 +145,6 @@
         <h1>Menu</h1>
         <h1>Menu</h1>
     </div>
-    <script src="../javaScript/header.js"></script>
-    <script src="../javaScript/home.js"></script>
+
 </body>
 </html>
