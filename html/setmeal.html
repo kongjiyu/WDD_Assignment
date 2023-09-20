@@ -1,31 +1,29 @@
 <!DOCTYPE html />
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Header</title>
     <link href="../css/header.css" rel="stylesheet"/>
-    <link href="../css/cart.css" rel="stylesheet"/>
-    <link href="../css/setmeal.css" rel="stylesheet" />
+    <link href="../css/alacarte.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/setmeal2.css">
+    <link rel="stylesheet" href="../css/setmeal.css">
+    <script src="../javaScript/header.js"></script>
+    <script defer src="../javaScript/setmeal.js"></script>
 </head>
 
 <body>
-    <header class="mainHeader">
+    <header>
         <a id="logo" href="#"><img src="../image/logo.png"/></a>
         <nav>
-            <a class="bottomLine" href="home.html">Home</a>
-            <a class="bottomLine" href="aboutUs.html">About Us</a>
-            <a class="bottomLine" href="menu.html">Menu</a>
-            <a class="bottomLine" href="#">Offer</a>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Offer</a>
             <button id="login" class="btnLogin-popup">Membership</button>
-            <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
-            <div class="total" id="total">0</div>
+            <button id="cart" href="#"><img src="../image/cart.png"></button>
         </nav>
     </header>
-
-    
-
     <div class="wrapper">
         <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
         <div class="form-box login">
@@ -51,7 +49,6 @@
                 </div>
             </form>
         </div>
-
         <div class="form-box register">
             <h2>Registration</h2>
             <form action="#" method="post" target="_blank">
@@ -79,94 +76,134 @@
                 </div>
             </form>
         </div>
-    </div>
-    
-    <section class="backwrapper">
-        <div class="style">
-            <h1 class="frist"><span>SET</span>MENU</h1>
-            <p>The meal packages are divided into four sets, namely the Prawn Noodle Set, 
-                Wantan Mee Set, Pork Noodle Set, and Fried Kway Teow Set. 
-                <i>Customers can choose one drink and one set dish from the following list 
-                in each of these packages.</i>
-            </p>
-            <p>Our package prices are all at RM15.00.</p>
-            <br>
-            <br>
-            <br>
-            <form action="#" method="post">
-            <div id="orderselect">
-                <div class="boderMenu" id="imagestyle">
-                <img src="../image/newPrawnmee.jpg" alt="prawnmee" >
-                <br>
-                <label for="prawnmeemenu">Prawnmee</label>
-                <input type="number" name="Prawnmee" id="prawnmeemenu" min="0" max="5" value="0"/>
-                </div>
-                <div class="boderMenu" id="imagestyle">
-                <img src="../image/Newwantanmee.jpg" alt="wantanmee" id="Wantan">
-                <br>
-                <label for="WanTanMee">WanTanMee</label>
-                <input type="number" name="WanTanMee" id="WanTanMee" min="0" max="5" value="0"/>
-                </div>
-                <div class="boderMenu" id="imagestyle">
-                <img src="../image/Newporknoodle.jpg" alt="porknoodle" >
-                <br>
-                <label for="PorkNoodle">PorkNoodle</label>
-                <input type="number" name="porkNoodle" id="porkNoodle" min="0" max="5" value="0"/>
-                </div>
+    </div> 
 
-            <div class="boderMenu" id="imagestyle">
-                <img src="../image/Newcharkwayteow.jpg" alt="porknoodle" >
-                <br>
-                <label for="charkwayteow">charkwayteow</label>
-                <input type="number" name="charkwayteow" id="charkwayteow" min="0" max="5" value="0"/>
-            </div>
-            </div>
-                
-
-                <fieldset id="drink">
-                <legend>DRINK</legend>
-                <div>                   
-                    <label>Soya-bean</label>
-                    <input type="radio" name="drink">  
-                    <br>                 
-                    <label>Coke</label>
-                    <input type="radio" name="drink">    
-                    <br>               
-                    <label>Iced-coffee</label>
-                    <input type="radio" name="drink"> 
-                    <br>                  
-                    <label>Iced-lemon-tea&nbsp;</label>
-                    <input type="radio" name="drink">   
-                    <br>                
-                    <label>Iced-water</label>
-                    <input type="radio" name="drink">
-                </div>                
-                </fieldset>
-                <fieldset id="setdish">
-                    <legend>SET DISH</legend>
-                    <div>                   
-                        <label>Tempura</label>
-                        <input type="radio" name="setmeal">  
-                        <br>                 
-                        <label>Spring-rools</label>
-                        <input type="radio" name="setmeal">    
-                        <br>               
-                        <label>Gyoza</label>
-                        <input type="radio" name="setmeal"> 
-                        <br>                  
-                        <label>Fried-tofu</label>
-                        <input type="radio" name="setmeal">   
-                        <br>                
-                        <label>Chicken-popcorn</label>
-                        <input type="radio" name="setmeal">
-                    </div>                
-                </fieldset>
-                <br>
-                <input type="submit" value="ADD TO CART">
-            </form>
-
-
+    <div class="backwrapper">
+        <div class="title">
+            <h4><span>ALACARTE</span>MENU</h4>
         </div>
-    </section>
-    <script src="../javaScript/header.js"></script>
-    <script src="../javaScript/alacarte.js"></script>
+        <div class="menu">
+            <div class="single-menu">
+                <img src="../image/newPrawnmee.jpg" alt="prawnmee" id="prawnmee">
+                <div class="menu-content">
+                    <h4>PRAWN MEE SET<span>RM20.00</span></h4>
+                    <p>Each set meal comes with a drink and a set dish. 
+                        *Each set meal can only choose one drink and a set dish*</p>
+                        <button data-modal-target="#modal">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="../image/Newwantanmee.jpg" alt="prawnmee">
+                <div class="menu-content">
+                    <h4>WANTAN MEE SET<span>RM20.00</span></h4>
+                    <p>Each set meal comes with a drink and a set dish. 
+                        *Each set meal can only choose one drink and a set dish* </p>
+                        <button data-modal-target="#modal">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="../image/Newporknoodle.jpg" alt="prawnmee">
+                <div class="menu-content">
+                    <h4>PORK NOODLE SET<span>RM20.00</span></h4>
+                    <p>Each set meal comes with a drink and a set dish. 
+                        *Each set meal can only choose one drink and a set dish*
+                    </p>
+                    <button data-modal-target="#modal">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="../image/Newcharkwayteow.jpg" alt="prawnmee">
+                <div class="menu-content">
+                    <h4>CHAR KWEY TEOW SET<span>RM20.00</span></h4>
+                    <p>Each set meal comes with a drink and a set dish. 
+                        *Each set meal can only choose one drink and a set dish*
+                    </p>
+                    <button data-modal-target="#modal">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="mealtitle">Select YOUR SET MEAL</div>
+            <button data-close-button="close-button" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body" >
+            <div class="boderMenu" id="imagestyle">
+                <div class="Setselect">
+                     <button data-modal-target="#modal2"><h3>PRAWN MEE SET</h3></button>
+                  </div>
+                  <div class="Setselect" id="newSetselect">
+                       <button data-modal-target="#modal2"><h3>WANTAN MEE SET</h3></button>
+                  </div>
+                  <div class="Setselect">
+                      <button data-modal-target="#modal2"> <h3>PORK NOODLE SET</h3></button>
+                  </div>
+                  <div class="Setselect">
+                       <button data-modal-target="#modal2"><h3>CHAR KWEY TEOW SET</h3></button>
+                  </div>
+            </div>
+       </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <div class="mealtitle">Select YOUR SET MEAL</div>
+            <button data-close-button="close-button" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body" >
+            <div class="boderMenu" id="imagestyle">
+                <form action="#" method="post">
+                    <label>AMOUNT</label>
+                    <input type="number" name="amount" max="5" min="0" value="0">
+                </form>
+                
+                <h3></h3><title></title></h3>
+                <form action="#" method="post">
+                    <fieldset id="drink">
+                    <legend>DRINK</legend>
+                    <div>                   
+                        <label>Soya-bean</label>
+                        <input type="radio" name="drink">  
+                        <br>                 
+                        <label>Coke</label>
+                        <input type="radio" name="drink">    
+                        <br>               
+                        <label>Iced-coffee</label>
+                        <input type="radio" name="drink"> 
+                        <br>                  
+                        <label>Iced-lemon-tea</label>
+                        <input type="radio" name="drink">   
+                        <br>                
+                        <label>Iced-water</label>
+                        <input type="radio" name="drink">
+                    </div>                
+                    </fieldset>
+                    <fieldset id="setdish">
+                        <legend>SET DISH</legend>
+                        <div>                   
+                            <label>Tempura</label>
+                            <input type="radio" name="setmeal">  
+                            <br>                 
+                            <label>Spring-rools</label>
+                            <input type="radio" name="setmeal">    
+                            <br>               
+                            <label>Gyoza</label>
+                            <input type="radio" name="setmeal"> 
+                            <br>                  
+                            <label>Fried-tofu</label>
+                            <input type="radio" name="setmeal">   
+                            <br>                
+                            <label>Chicken-popcorn</label>
+                            <input type="radio" name="setmeal">
+                        </div>                
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="CONFIRMED">
+                </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+   </body>        
+</html>
