@@ -29,7 +29,7 @@ let menuItemsData = [{
     img:"../image/Newcharkwayteow.jpg"
 }]
 
-let cart = JSON.parse(localStorage.getItem("data")) || {}
+let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 let generateMenu =() =>{
     return (menu.innerHTML = menuItemsData
@@ -40,7 +40,7 @@ let generateMenu =() =>{
         <div class="single-menu">
             <img src=${img} alt="prawnmee">
             <div class="menu-content">
-                <h4>${name}<span>${price}</span></h4>
+                <h4>${name}<span>RM${price}</span></h4>
                 <p>${desc}</p>
                     <button  onclick="increment(${id})" class="addToCart">Add To Cart</button>
                     <div id=${id}>${search.item === undefined? 0: search.item}</div>
@@ -68,7 +68,7 @@ let increment = (id) => {
         search.item +=1;
     };
     
-    
+    alert("Added to the cart! ");
 
     update(selectedItem.id);
     localStorage.setItem("data", JSON.stringify(cart));
