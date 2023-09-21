@@ -3,11 +3,13 @@
  width: 35%;
  margin-right: 45px;
  background-color: red;
+ border-radius: 10px;
 }
 #setdish{
  width: 35%;
  background-color: red;
  margin-left: 150px;
+ border-radius: 10px;
 }
 h1{
  text-transform: capitalize;
@@ -30,4 +32,30 @@ float: left;
   padding:50px ;
   width: 125px;
   height: 125px;
+}
+
+.box-contro{
+  margin-left: 50px;
+}
+
+.buttonmain{
+  border-radius: 10px;
+  color: rgba(255, 255,255, 0.7);
+  background-color: orange;
+  margin-left: 240px;
+  width: 110px;
+  height: 30px;
+}
+
+.amountcontro{
+    margin-left: 50px; 
+    margin-right: 70px;
+    background-color: red;
+}
+
+.buttonend{
+  background-color: orange;
+  margin-left: 170px;
+  width: 110px;
+  height: 30px;
 }
