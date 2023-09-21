@@ -1,5 +1,5 @@
 .backwrapper{
-    background-color: #FADA5E;
+    background-color: transparent;
     width: 1200px;
     margin: 100px auto;
     backdrop-filter: blur(40px);
@@ -67,6 +67,10 @@
     padding: 3px;
 }
 
+#prawnmee{
+    height: 190px;
+    width: 225px;
+}
 .single-menu h4{
     text-transform: capitalize;
     font-size: 22px;
@@ -83,5 +87,4 @@
 p{
     color: white;
 }
-
 
