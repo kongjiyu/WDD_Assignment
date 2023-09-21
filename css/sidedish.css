@@ -1,10 +1,10 @@
 .backwrapper{
-    background-color: #FADA5E;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 1200px;
     margin: 100px auto;
     backdrop-filter: blur(40px);
     border-radius: 20px;
-    box-shadow: 0 30px 50px gray;
+    box-shadow: 0 20px 30px gray;
 }
 
 .title{
@@ -93,4 +93,114 @@
 
 p{
     color: white;
+}
+
+#drink{
+    float: left;
+    width: 35%;
+    margin-right: 45px;
+    background-color: red;
+   }
+   
+   #setdish{
+    width: 35%;
+    background-color: red;
+    margin-left: 150px;
+   }
+   
+   h1{
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: underline;  
+   }
+   
+   #orderselect{
+   border: 1px solid white;
+   }
+   
+   #imagestyle{
+   float: left;
+   }
+   
+   .distance img{
+     padding:50px ;
+     width: 125px;
+     height: 125px;
+   }
+
+
+   *, *::after, *::before {
+    box-sizing: border-box;
+}
+.mealtitle{
+    text-align: center;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: red;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Setselect{
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#newSetselect{
+    padding-left: 50px;
 }
