@@ -289,7 +289,7 @@ footer{
 
 .footerContainer{
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 20px 30px 0px;
 }
 
 .socialIcons{
@@ -299,7 +299,7 @@ footer{
 
 .socialIcons a{
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     background-color: transparent;
     margin: 10px;
     border-radius: 50%;
@@ -313,14 +313,15 @@ footer{
 
 .socialIcons a:hover{
     background-color: white;
+    box-shadow: 0 20px 50px black;
 }
 
 .socialIcons a:hover path{
-    fill: red;
+    fill: red;    
 }
 
 .footerNav{
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .footerNav ul{
@@ -331,7 +332,7 @@ footer{
 
 .footerNav ul li a{
     color: white;
-    margin: 40px;
+    margin: 0 40px;
     text-decoration: none;
     font-size: 1.3em;
     opacity: 0.7;
@@ -345,6 +346,7 @@ footer{
 .footerBottom{
     background-image: linear-gradient(to right, red , #ca2739);
     padding: 20px;
+    padding-top: 0;
     text-align: center;
 }
 
