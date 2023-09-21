@@ -1,20 +1,77 @@
-.article{
-    display: flex;
-}
-
 /*Makes text readable on dark background*/
-article {
+section {
     color:rgb(255,255,255);
     font-weight:bold;
     font-size: 150%;
 }
 
-/*Creates 50px of distance between picture and text*/
-#tyz, #ngw {
-    padding-left:50px;
+h1 {
+    font-size: 3rem;
+    text-decoration-line:underline;
 }
 
-/*Creates border around aside element, temporary.*/
-aside{
-    border: 5px solid red;
+span {
+    color: yellow;
+    font-size: 2em;
+}
+
+.about1 {
+    display:flex;
+    text-align:center;
+    margin-left:5em;
+    margin-right:5em;
+    margin-top:3em;
+}
+
+.meetFounder{
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    margin-top:1.2em;
+}
+
+
+.about2 img {
+    height: auto;
+    width:420px;
+    margin-right: 2em;
+}
+
+.sub1 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#zyzw {
+    border: white solid;
+}
+
+.sub2 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.about3 img {
+    height: auto;
+    width:420px;
+    float:right;
+    margin-left: 2em;
+}
+
+.about3text {
+    display: flex; flex-flow: row no-wrap; align-items: center; justify-content: center;
+}
+
+.sub1 {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+#tzy, #nzw {
+    margin-left: 2em;
+    margin-right: 2em;
+    border: white solid;
 }
