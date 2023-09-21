@@ -5,6 +5,7 @@
     backdrop-filter: blur(40px);
     border-radius: 20px;
     box-shadow: 0 30px 50px gray;
+    padding: 20px;
 }
 .title{
     text-align: center;
@@ -87,4 +88,5 @@
 p{
     color: white;
 }
+
 
