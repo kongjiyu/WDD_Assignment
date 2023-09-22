@@ -24,14 +24,15 @@ let generateCartItems = () => {
                 console.log(x);
                 let { id, item } = x;
                 let search = menuItemsData.find((y)=>y.id === id) || [];
+                let {img, name, price} = search
                 return `
                     <div class="cart-item" >
-                        <img src=${search.img} id="cart-img" alt="" />
+                        <img src=${img} id="cart-img" alt="" />
                         <div class="details">
                             <div class="title-price-x">
                                 <h4 class="title-price">
-                                    <p class="cart-item-name">${search.name}</p>
-                                    <p class="cart-item-price">RM${search.price}</p>
+                                    <p class="cart-item-name">${name}</p>
+                                    <p class="cart-item-price">RM${price}</p>
                                 </h4>
                                 <div onclick="removeItem(${id})" class="delete">
                                 <svg  width="20" height="20" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" id="mainIconPathAttribute"></path> <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path> </svg>
@@ -50,6 +51,7 @@ let generateCartItems = () => {
         }).join(""))
     } else {
         ShoppingCart.innerHTML =  ``;
+        document.getElementById("checkout-page").innerHTML=``;
         label.innerHTML = `
         <h2>Cart is Empty</h2>
         <a href="header.html">
@@ -110,12 +112,19 @@ let removeItem = (id) => {
     generateCartItems();
 
     localStorage.setItem("data", JSON.stringify(cart));
-    TotalAmount();
     calculation();
+    TotalAmount();
 };
 
+let clearCart = () => {
+    cart=[];
+    generateCartItems();
+    localStorage.setItem("data", JSON.stringify(cart));
+    calculation();
+}
+
 let TotalAmount = () => {
-    if(cart.length !==0) {
+    if (cart.length !==0) {
         let amount = cart.map((x)=> {
             let { item, id } = x;
             let search = menuItemsData.find((y) => y.id === id) || [];
@@ -125,7 +134,7 @@ let TotalAmount = () => {
         document.getElementById("checkout-page").innerHTML = `
         <h2>Total Bill : RM ${amount}</h2>
         <button class="checkout">Checkout</button>
-        <button class="removeAll">Clear Cart</button>
+        <button onclick="clearCart()" class="removeAll">Clear Cart</button>
         `;
     } else return;
 }
