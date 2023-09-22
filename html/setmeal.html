@@ -161,16 +161,16 @@
         <div class="modal-body" >
             <div class="boderMenu" id="imagestyle">
                 <div class="Setselect">
-                     <button data-modal-target="#modal2" class="buttoncontro"><h3>PRAWN MEE </h3></button>
+                     <button data-modal-target="#modal2" class="buttoncontro" id = "prawnmeeset"><h3>PRAWN MEE </h3></button>
                   </div>
                   <div class="Setselect">
-                       <button data-modal-target="#modal2" class="buttoncontro"><h3>WANTAN MEE </h3></button>
+                       <button data-modal-target="#modal2" class="buttoncontro" id="wantanmeeset" value="wantanmee"><h3>WANTAN MEE </h3></button>
                   </div>
                   <div class="Setselect">
-                      <button data-modal-target="#modal2" class="buttoncontro" ><h3>PORK NOODLE </h3></button>
+                      <button data-modal-target="#modal2" class="buttoncontro" value="porknoodle"><h3>PORK NOODLE </h3></button>
                   </div>
                   <div class="Setselect">
-                       <button data-modal-target="#modal2" class="buttoncontro"><h3>CHAR KWEY TEOW </h3></button>
+                       <button data-modal-target="#modal2" class="buttoncontro" value="charkweyteow"><h3>CHAR KWEY TEOW </h3></button>
                   </div>
             </div>
        </div>
@@ -187,7 +187,7 @@
                 <form action="#" method="post">
                     <div class="amountcontro">
                     <label>AMOUNT</label>
-                    <input type="number" name="amount" max="5" min="0" value="0">
+                    <input type="number" id="item" name="amount" max="5" min="0" value="0">
                     </div>
                 </form>
                 
@@ -198,26 +198,26 @@
             <fieldset id="drink">
                     <legend>DRINK</legend>
                        <div class="radiocontro">            
-                            <label><input type="radio" name="drink">  Soya-bean</label>               
-                            <label> <input type="radio" name="drink">  Coke</label>              
-                            <label> <input type="radio" name="drink">Iced-coffee</label>              
-                            <label><input type="radio" name="drink"> Iced-lemon-tea</label>             
-                            <label><input type="radio" name="drink">Iced-water</label>           
+                            <label><input type="radio" name="drink" value="Soya Bean">  Soya-bean</label>               
+                            <label> <input type="radio" name="drink" value="Coke">  Coke</label>              
+                            <label> <input type="radio" name="drink" value="Iced coffee">Iced-coffee</label>              
+                            <label><input type="radio" name="drink" value="Iced Lemon Tea"> Iced-lemon-tea</label>             
+                            <label><input type="radio" name="drink" value="Iced Water">Iced-water</label>           
                     </div>                       
             </fieldset>
                     <fieldset id="setdish">                       
                         <legend>SET DISH</legend>
                         <div class="radiocontro">                   
-                            <label><input type="radio" name="setmeal">Tempura</label>
-                            <label><input type="radio" name="setmeal"> Spring-rools</label>              
-                            <label><input type="radio" name="setmeal">Gyoza</label>              
-                            <label><input type="radio" name="setmeal">Fried-tofu</label>             
-                            <label> <input type="radio" name="setmeal">Chicken-popcorn</label>                      
+                            <label><input type="radio" name="side-dish"  value="Tempura">Tempura</label>
+                            <label><input type="radio" name="side-dish" value="Spring rools"> Spring-rools</label>              
+                            <label><input type="radio" name="side-dish" value="Gyoza">Gyoza</label>              
+                            <label><input type="radio" name="side-dish" value="Fried Tofu">Fried-tofu</label>             
+                            <label> <input type="radio" name="side-dish" value="Chicken Popcorn">Chicken-popcorn</label>                      
                         </div>                                   
                     </fieldset>
       </div> 
                     <br>
-                   <button class="buttonend" >CONFIRMED</button>
+                   <input type="submit" value="CONFIRMED">
                 </form>
 </div>
     <div id="overlay"></div>
