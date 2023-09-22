@@ -2,6 +2,17 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
+let cart = JSON.parse(localStorage.getItem("data")) || [];
+
+var selectedItem ;
+
+let radioBtnsDrink = document.querySelectorAll
+("input[name='drink']");
+
+let radioBtnsSideDish = document.querySelectorAll
+("input[name='side-dish']");
+
+// open onlick
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget)
@@ -53,3 +64,61 @@ function closeModal(modal2) {
     modal2.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+var form = document.getElementById('form')
+
+let getSetMeal = (id) => {
+    selectedItem = id;
+    console.log(selectedItem)
+}
+
+let findSelectedDrink = () => {
+    let selectedDrink = document.querySelector
+    ("input[name='drink']:checked").value;
+}
+
+let findSelectedSideDish = () => {
+    let selectedSideDish = document.querySelector
+    ("input[name='side-dish']:checked").value;
+}
+
+radioBtnsDrink.forEach(radioBtnsDrink => {
+        radioBtnsDrink.addEventListener("change",findSelectedDrink);
+    });
+
+radioBtnsSideDish.forEach(radioBtnsSideDish => {
+        radioBtnsSideDish.addEventListener("change",findSelectedSideDish);
+    });
+
+let calculation =()=> {
+    let cartIcon = document.getElementById("total");
+    cartIcon.innerHTML = cart.map((x) => x.item).reduce((x,y) => x+y, 0);
+};
+
+let update = (id) => {
+    let search = cart.find((x) => x.id === id);
+    console.log(search.item);
+    document.getElementById(id).innerHTML = search.item;
+    calculation();
+};
+
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+    var amount = document.getElementById('item').value
+    var selectedSideDish = document.querySelector
+    ("input[name='side-dish']:checked").value;
+    var selectedDrink = document.querySelector
+    ("input[name='drink']:checked").value;
+    cart.push({
+        id: selectedItem,
+        item: amount,
+        sideDish: selectedSideDish,
+        drink: selectedDrink,
+        price: 20
+    });
+    alert("Added to the cart! ");
+    update(selectedItem);
+    localStorage.setItem("data", JSON.stringify(cart));
+    calculation();
+})
+calculation();
