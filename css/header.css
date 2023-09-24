@@ -281,8 +281,6 @@ label span{
     text-decoration: underline;
 }
 
-
-
 /*FOOTER STYLES*/
 
 footer{
@@ -364,4 +362,23 @@ footer{
     margin: 0px 5px;
     color: yellow;
     font-size: 2em;
+}
+
+.reveal{
+    transform: scale(0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.active{
+    transform: scale(1);
+    opacity: 1;
+}
+
+df-messenger{
+    --df-messenger-bot-message: #E52B50;
+    --df-messenger-font-color: white;
+    --df-messenger-user-message: rgba(202, 39, 57, 0.7);
+    --df-messenger-button-titlebar-color: white;
+    --df-messenger-button-titlebar-font-color: red;
 }
