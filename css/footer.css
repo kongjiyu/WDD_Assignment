@@ -4,7 +4,8 @@ footer{
 
 .footerContainer{
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 40px 30px 20px;
+    padding-right: 20%;
 }
 
 .socialIcons{
@@ -73,4 +74,32 @@ footer{
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
+    padding-right: 20%;
+}
+
+.workinghours {
+    float: left;
+}
+  
+.workinghours th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+  
+.workinghours th {
+    background-color: white;
+    font-weight: bold;
+}
+  
+.workinghours tbody tr{
+    background-color: yellow;
+}
+  
+.workinghours tbody tr:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.workinghours th td :nth-child(2) {
+    width: 40%;
 }
