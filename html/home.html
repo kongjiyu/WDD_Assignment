@@ -19,8 +19,8 @@
             <a class="bottomLine" href="home.html">Home</a>
             <a class="bottomLine" href="aboutUs.html">About Us</a>
             <a class="bottomLine" href="menu.html">Menu</a>
-            <a class="bottomLine" href="#">Offer</a>
-            <button id="login" class="btnLogin-popup">Membership</button>
+            <a class="bottomLine" href="offer.html">Offer</a>
+            <button id="loginbtn" class="btnLogin-popup">Membership</button>
             <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
             <div class="total" id="total">0</div>
         </nav>
@@ -28,24 +28,24 @@
 
     <div class="wrapper">
         <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
-        <div class="form-box login">
+        <div id="login" class="form-box login">
             <h2>Login</h2>
-            <form action="#" method="post" target="_blank">
+            <form >
                 <div class="input-box">
                     <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
-                    <input type="email" placeholder="" required />
+                    <input id="email" type="email" placeholder="" required />
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
-                    <input type="password" placeholder="" required />
+                    <input id="password" type="password" placeholder="" required />
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button id="logIn" type="submit" class="btn">Login</button>
                 <div class="login-register">
                     <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
                 </div>
@@ -54,20 +54,20 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="#" method="post" target="_blank">
+            <form id="register" >
                 <div class="input-box">
-                    <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
+                    <span id="username" id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
                     <input type="text" placeholder="" required />
                     <label>Username<span id="required">*</span></label>
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
-                    <input type="email"  placeholder="" required/>
+                    <input id="email" type="email"  placeholder="" required/>
                     <label>Email<span id="required">*</span></label>
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
-                    <input type="password" placeholder="" required />
+                    <input id="password" type="password" placeholder="" required />
                     <label>Password<span id="required">*</span></label>
                 </div>
                 <div class="remember-forgot">
@@ -135,9 +135,9 @@
             <h3>About Us</h3>
             <div class="divider"></div>
         </div>
-        <div class="first card reveal">
-            <div class="first card-pic"></div>
-            <div class="first card-description">
+        <div class="first card">
+            <div class="first card-pic reveal"></div>
+            <div class="first card-description reveal">
                 <h3>A Bowlful Of Happiness</h3>
                 <div class="divider"></div>
                 <p>With over 300 venues across the world, LetYouEatMyNoodle is one of the fastest growing noodle chain originated here in
@@ -145,9 +145,9 @@
                 affordability, consistency, and immaculate quality of food served 365 days a year ensures increasing success for many years to come.</p>
             </div>
         </div>
-        <div class="second card reveal">
-            <div class="second card-pic"></div>
-            <div class="second card-description">
+        <div class="second card">
+            <div class="second card-pic reveal"></div>
+            <div class="second card-description reveal">
                 <h3>Where it all started...</h3>
                 <div class="divider"></div>
                 <p>Founded in 1996 in the town of Sungai Petani, Kedah, local blood and current company CEO Dato' Tan Zhong Yen
@@ -156,9 +156,9 @@
                 experiences as his family's personal chef and took
                 a leap of faith into the kitchen industry.</p>            </div>
         </div>
-        <div class="third card reveal">
-            <div class="third card-pic"></div>
-            <div class="third card-description">
+        <div class="third card ">
+            <div class="third card-pic reveal"></div>
+            <div class="third card-description reveal">
                 <p>He started selling homemade bowls of noodles under the name XiaMianGeiNiChi for 2 years in his hometown. </p>
                 <p>On the faithful day of 27th of July, 1996, he met with current CFO, Dr Ng Zhe Wei that was impressed by
                 the former's unique and Kedah-inspired flavours.
@@ -178,11 +178,11 @@
             </div>
             <div class="footerNav reveal">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Offer</a></li>
-                    <li><a href="">Membership</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="offet.html">Offer</a></li>
+                    <li><a class="btnLogin-popup">Membership</a></li>
                 </ul>
             </div>
         </div>
@@ -193,10 +193,10 @@
     </footer>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
-      intent="WELCOME"
-      chat-title="NoodleBot"
-      agent-id="7f8ea74a-cd7d-4db8-8923-55f50d735263"
-      language-code="en"
+    intent="WELCOME"
+    chat-title="NoodleBot"
+    agent-id="7f8ea74a-cd7d-4db8-8923-55f50d735263"
+    language-code="en"
     ></df-messenger>
     <script src="../javaScript/header.js" defer></script>
     <script src="../javaScript/home.js" defer></script>
