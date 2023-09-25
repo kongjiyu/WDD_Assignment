@@ -373,7 +373,7 @@ footer{
     transition: all .8s ease-out;
 }
 
-.active{
+.active2{
     transform: scale(1);
     opacity: 1;
 }

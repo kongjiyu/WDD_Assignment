@@ -201,25 +201,25 @@ body{
     left: 50%;
 }
 
-.first.card-pic.active{
+.first.card-pic.active2{
     background-image: url('../image/cardPic1.jpg');
     left: 65%;
 }
 
-.first.card-description.active, .third.card-description.active{
+.first.card-description.active2, .third.card-description.active2{
     left: 35%;
 }
 
-.second.card-pic.active{
+.second.card-pic.active2{
     background-image: url('../image/cardPic2.jpg');
     left: 35%;
 }
 
-.second.card-description.active{
+.second.card-description.active2{
     left: 65%;
 }
 
-.third.card-pic.active{
+.third.card-pic.active2{
     background-image: url('../image/cardPic3.jpg');
     left: 65%;
 }

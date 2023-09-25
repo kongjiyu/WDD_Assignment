@@ -36,9 +36,9 @@ function reveal() {
         var revealpoint = 150;
 
         if (revealTop < windowheight - revealpoint) {
-            reveals[i].classList.add('active');
+            reveals[i].classList.add('active2');
         } else {
-            reveals[i].classList.remove('active');
+            reveals[i].classList.remove('active2');
         }
     }
 }
