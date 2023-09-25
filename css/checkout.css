@@ -1,0 +1,147 @@
+.container {
+    margin:5% 20% 5% 20%;
+    box-sizing:border-box;
+    color: white;
+    left: 50%;
+    top: 50%;
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    text-align: center;
+}
+
+.title {
+    padding-top:10px;
+    margin-top: 2%;
+    font-size:26px; 
+    font-weight:700;  
+    letter-spacing:1px; 
+    text-transform:uppercase; 
+    width:auto ;
+    text-align:center; 
+    white-space:nowrap; 
+    padding-bottom:13px;
+}
+
+
+.input-detail{
+    position: relative;
+    width: 60%;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin: 30px 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.input-detail label{
+    position: absolute;
+    padding-left: 1%;
+    top: 47%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-detail input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-detail input:focus~label, .input-detail input:not(:placeholder-shown)~label{
+    top: -50%;
+}
+
+.input-detail #icon{
+    position: absolute;
+    right: 3%;
+    margin-top: 2.5%;
+}
+
+
+
+
+
+.submit-form {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 1% 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.submit-form:disabled {
+  pointer-events: none;
+}
+
+.submit-form:hover{
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  border-color: white;
+}
+
+.submit-form:active{
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.location-btn {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+}
+
+.location {
+    font-size: 20px;
+    
+}
+
+.address {
+    resize: vertical;
+    background: none;
+    color: white;
+    margin-top: 3%;
+    align-items: center;
+    border: 2px solid white;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 50%;
+    height: 100px;
+    margin-bottom: 3%;
+    text-align: center;
+}
