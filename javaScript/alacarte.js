@@ -1,6 +1,4 @@
 let menu = document.getElementById("menu");
-let sideDish = document.getElementById("side-dish-menu");
-let drink = document.getElementById("drink-menu");
 
 let cart = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -15,8 +13,7 @@ let generateAlacarteMenu =() =>{
             <div class="menu-content">
                 <h4>${name}<span>RM${price}</span></h4>
                 <p>${desc}</p>
-                    <button  onclick="increment(${id})" class="addToCart">Add To Cart</button>
-                    <div id=${id}>${search.item === undefined? 0: search.item}</div>
+                    <button  class="buttonmain" onclick="increment(${id})" class="addToCart">Add To Cart</button>
             </div>
         </div>
         `;
@@ -24,71 +21,6 @@ let generateAlacarteMenu =() =>{
 };
 
 generateAlacarteMenu();
-
-let generateSideDishMenu =() =>{
-    return (sideDish.innerHTML = sideDishItemsData
-        .map((x)=>{
-            let { id, name, price, desc, img } = x;
-            let search = cart.find((x)=> x.id === id) || []
-        return `
-        <div class="single-menu">
-            <img src=${img} alt="${id}" class="side-dish-image">
-            <div class="menu-content">
-                <h4>${name}<span>RM${price}</span></h4>
-                <p>${desc}</p>
-                    <button  onclick="increment(${id})" class="addToCart">Add To Cart</button>
-                    <div id=${id}>${search.item === undefined? 0: search.item}</div>
-            </div>
-        </div>
-        `;
-    }).join(""));
-};
-
-generateSideDishMenu();
-
-let generateDrinkshMenu =() =>{
-    return (drink.innerHTML = drinksItemsData
-        .map((x)=>{
-            let { id, name, price, desc, img } = x;
-            let search = cart.find((x)=> x.id === id) || []
-        return `
-        <div class="single-menu">
-            <img src=${img} alt="${id}" class="drink-image">
-            <div class="menu-content">
-                <h4>${name}<span>RM${price}</span></h4>
-                <p>${desc}</p>
-                    <button  onclick="increment(${id})" class="addToCart">Add To Cart</button>
-                    <div id=${id}>${search.item === undefined? 0: search.item}</div>
-            </div>
-        </div>
-        `;
-    }).join(""));
-};
-
-generateDrinkshMenu();
-
-let increment = (id) => {
-    let selectedItem = id;
-    let search = cart.find((x)=> x.id=== selectedItem.id);
-
-    if(search === undefined) {
-        cart.push({
-            id: selectedItem.id,
-            item: 1,
-            
-        }
-        );
-    }
-    else{
-        search.item +=1;
-    };
-    
-    alert("Added to the cart! ");
-
-    update(selectedItem.id);
-    localStorage.setItem("data", JSON.stringify(cart));
-    calculation();
-};
 
 let decrement = (id) => {
     let selectedItem = id;
