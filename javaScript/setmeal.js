@@ -3,8 +3,9 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
 let cart = JSON.parse(localStorage.getItem("data")) || [];
+menuItemsData = JSON.parse(localStorage.getItem("setData")) || menuItemsData;
 
-var selectedItem ;
+var selectedItem, nameItem ;
 
 let radioBtnsDrink = document.querySelectorAll
 ("input[name='drink']");
@@ -67,9 +68,12 @@ function closeModal(modal2) {
 
 var form = document.getElementById('form')
 
-let getSetMeal = (id) => {
+let getSetMeal = (id, value,name) => {
     selectedItem = id;
+    nameItem = value;
+    image = name;
     console.log(selectedItem)
+    console.log(nameItem)
 }
 
 let findSelectedDrink = () => {
@@ -104,21 +108,43 @@ let update = (id) => {
 
 form.addEventListener('submit', function(event){
     event.preventDefault()
-    var amount = document.getElementById('item').value
-    var selectedSideDish = document.querySelector
-    ("input[name='side-dish']:checked").value;
-    var selectedDrink = document.querySelector
-    ("input[name='drink']:checked").value;
-    cart.push({
-        id: selectedItem,
-        item: amount,
-        sideDish: selectedSideDish,
-        drink: selectedDrink,
-        price: 20
-    });
-    alert("Added to the cart! ");
-    update(selectedItem);
-    localStorage.setItem("data", JSON.stringify(cart));
-    calculation();
+    var amount = parseInt(document.getElementById('item').value)
+    if (amount>0) {
+        var selectedSideDish = document.querySelector
+        ("input[name='side-dish']:checked").value;
+        var selectedDrink = document.querySelector
+        ("input[name='drink']:checked").value;
+        cart.push({
+            id: selectedItem,
+            item: amount,
+            sideDish: selectedSideDish,
+            drink: selectedDrink,
+            price: 20,
+            img: image,
+            name: nameItem,
+            meal:"set"
+        });
+        menuItemsData.push({
+            id: selectedItem,
+            item: amount,
+            sideDish: selectedSideDish,
+            drink: selectedDrink,
+            price: 20,
+            img: image,
+            name: nameItem,
+            meal:"set"
+        })
+        alert("Added to the cart! ");
+        update(selectedItem);
+        localStorage.setItem("data", JSON.stringify(cart));
+        localStorage.setItem("setData", JSON.stringify(menuItemsData));
+        calculation();
+        console.log(menuItemsData);
+        location.reload();
+    } else {
+        alert('amount cannot be 0');
+        return;
+    }
+    
 })
 calculation();
