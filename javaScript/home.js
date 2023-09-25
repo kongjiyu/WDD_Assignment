@@ -18,6 +18,7 @@ document.querySelector('.intro').addEventListener('mouseout',() => {
 })
 
 document.querySelectorAll('.s_button')[1].onclick = () => {
+    _direction=true;
     _move();
 }
 
