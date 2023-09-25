@@ -1,0 +1,62 @@
+.main-title {
+    font-size:4em;
+    margin-bottom: 0;
+}
+
+table{
+    display:flex;
+}
+
+h3 {
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+td {
+    font-size:1.5em;
+    padding-top:1em;
+}
+
+section {
+    color: white;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border-radius:10px;
+    background-color:beige;
+}
+
+.age{
+    width:100%
+}
+
+label {
+    font-size:1.3em;
+}
+
+
+textarea {
+    width:100%;
+    height:5em;
+    border-radius:10px;
+    background-color:beige;
+    font-size:1.2em;
+}
+
+.submit-button {
+    width:30%;
+    height:1.5em;
+    font-size:1em;
+    border-radius:10px;
+    background-color:beige;
+}
+
+input {
+    height:1.2em;
+    font-size:1em;
+}
