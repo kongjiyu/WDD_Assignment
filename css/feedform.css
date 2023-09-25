@@ -28,6 +28,9 @@
     background-color: rgba(0,0,0,.1);
     backdrop-filter: blur(20px);
     padding: 50px;
+    box-shadow: 0 0 50px rgba(255,255,255,1);
+    margin:20px 10%;
+    border-radius: 20px;
 }
 
 .rating{
