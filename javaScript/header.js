@@ -42,11 +42,3 @@ function reveal() {
         }
     }
 }
-
-var submitButton = document.querySelectorAll(button[type = "submit"]);
-submitButton.addEventListener('click', SubmitForm());
-
-function SubmitForm(event) {
-    event.preventDefault;
-}
-

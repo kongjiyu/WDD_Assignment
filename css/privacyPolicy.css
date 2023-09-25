@@ -1,0 +1,14 @@
+.policy-container{
+    color: white;
+    width: 90%;
+    font-size: 120%;
+    margin-left: 5%;
+    background-color: rgba(0,0,0,.2);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+}
+
+a.privacy{
+    color: lightcoral;
+    text-decoration: none;
+}
