@@ -3,44 +3,67 @@
     margin-bottom: 0;
 }
 
-table{
+.feedback-table{
     display:flex;
 }
 
-h3 {
+.form-section h3 {
     margin-top:2px;
     margin-bottom:2px;
 }
 
-td {
+.form-section td {
     font-size:1.5em;
     padding-top:1em;
 }
 
-section {
+.form-section{
     color: white;
-    min-height: 100vh;
+    height: fit-content;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter: blur(20px);
+    padding: 50px;
 }
 
-input {
-    border-radius:10px;
-    background-color:beige;
+.rating{
+    transform: rotateY(180deg);
+}
+
+.rating input[type="radio"]{
+    display: none;
+}
+
+.rating path{
+    cursor: pointer;
+}
+
+.rating label:hover path,.rating label:hover~label path, input:checked+label path, input:checked~label path{
+    fill: yellow;
+}
+
+.rating path{
+    transition:all .5s ease;
 }
 
 .age{
     width:100%
 }
 
-label {
-    font-size:1.3em;
+.form-section input{
+    border-radius:10px;
+    background-color:beige;
 }
 
+.rating label {
+    padding: 0 30px;
+}
 
-textarea {
+.form-section textarea {
     width:100%;
     height:5em;
     border-radius:10px;
@@ -56,7 +79,17 @@ textarea {
     background-color:beige;
 }
 
-input {
+.form-section input {
     height:1.2em;
     font-size:1em;
+}
+
+textarea#custFeed{
+    font-size: 1em;
+}
+
+.post-feedback button:hover{
+    filter: brightness(90%);
+    transition: all .5s ease;
+    cursor: pointer;
 }
