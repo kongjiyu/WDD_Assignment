@@ -12,6 +12,7 @@
     <link href="../css/cart.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/footer.css">
     <script defer src="../javaScript/header.js"></script>
+    <script defer src="../javaScript/data.js"></script>
     <script defer src="../javaScript/setmeal.js"></script>
 </head>
 
@@ -161,16 +162,16 @@
         <div class="modal-body" >
             <div class="boderMenu" id="imagestyle">
                 <div class="Setselect">
-                     <button data-modal-target="#modal2" class="buttoncontro" id = "prawnmeeset"><h3>PRAWN MEE </h3></button>
+                     <button data-modal-target="#modal2" class="buttoncontro" id = "prawnmeeset" value="Prawn Mee Set" name="../image/newPrawnmee.jpg" onclick="getSetMeal(id,value,name)"><h3>PRAWN MEE </h3></button>
                   </div>
                   <div class="Setselect">
-                       <button data-modal-target="#modal2" class="buttoncontro" id="wantanmeeset" value="wantanmee"><h3>WANTAN MEE </h3></button>
+                       <button data-modal-target="#modal2" class="buttoncontro" id="wantanmeeset" value="Wan Tan Mee Set" name="../image/Newwantanmee.jpg" onclick="getSetMeal(id, value,name)"><h3>WANTAN MEE </h3></button>
                   </div>
                   <div class="Setselect">
-                      <button data-modal-target="#modal2" class="buttoncontro" value="porknoodle"><h3>PORK NOODLE </h3></button>
+                      <button data-modal-target="#modal2" class="buttoncontro" id="porknoodleset" value="Pork Noodle Set" name="../image/Newporknoodle.jpg" onclick="getSetMeal(id,value, name)"><h3>PORK NOODLE </h3></button>
                   </div>
                   <div class="Setselect">
-                       <button data-modal-target="#modal2" class="buttoncontro" value="charkweyteow"><h3>CHAR KWEY TEOW </h3></button>
+                       <button data-modal-target="#modal2" class="buttoncontro" id="charkweyteow" value="Char Kwey Teow Set" name="../image/Newcharkwayteow.jpg" onclick="getSetMeal(id, value, name)"><h3>CHAR KWEY TEOW </h3></button>
                   </div>
             </div>
        </div>
@@ -184,17 +185,15 @@
         </div>
         <div class="modal-body" >
             <div class="boderMenu" id="imagestyle">
-                <form action="#" method="post">
-                    <div class="amountcontro">
+            <form action="#" method="post" id="form">
+
+        <div class="box-contro">
+            <fieldset id="amount">
+                <div class="amountcontro">
                     <label>AMOUNT</label>
                     <input type="number" id="item" name="amount" max="5" min="0" value="0">
                     </div>
-                </form>
-                
-                <h3></h3><title></title></h3>
-                <form action="#" method="post">
-
-        <div class="box-contro">
+            </fieldset>
             <fieldset id="drink">
                     <legend>DRINK</legend>
                        <div class="radiocontro">            
@@ -221,7 +220,7 @@
                 </form>
 </div>
     <div id="overlay"></div>
-
+    <script src="../javaScript/header.js"></script>
     
 </body>
 </html>
