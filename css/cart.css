@@ -10,7 +10,12 @@
 
 .cart-title{
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    color: white;
     width: auto;
     display: block;
     height: fit-content;
@@ -19,7 +24,6 @@
 #cart-title{
     font-size: 35px;
     margin: 0;
-    color: black;
 }
 
 #cart-title {
@@ -73,20 +77,31 @@
     margin-top: 10px;
 }
 
-#cart-img {
+#cart-img , #cart-img-set{
     width: 100px;
     height: 100px;
     border-radius: 50px;
+    margin: 1% 0px 1% 1% ;
+    border: 2px solid white ;
+}
+
+#cart-img-set {
+    margin: 5% 0px 5% 1% ;
     
 }
 
 .cart-item{
-    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     display: flex;
     margin: 10px;
     margin-left: 20%;
     margin-right: 20%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    color: white;
 }
 
 .title-price-x {
@@ -103,50 +118,89 @@
     margin: 0px;
 }
 
-.cart-item-price {
-    background-color: black;
-    color: white;
+
+.cart-item-price, .cart-item-price-set {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
     border-radius: 4px;
     padding: 3px 6px;
     margin: 0px;
 }
 
-.cart-item-name {
+.cart-item-name , .cart-item-name-set{
     margin: 0px;
+    font-size: 20px
+}
+
+.cart-item-name-set{ 
+    padding-top: 15%;
+}
+
+.cart-item-name-set li {
+    font-size: 15px;
+}
+
+.cart-sideDish , .cart-drink {
+    display: list-item;
+    
 }
 
 .details {
     margin-left: 10px;
 }
 
-.cart-buttons button {
-    margin: 0 5px;
-    display: inline-block;
-    outline: 0;
-    border: none;
-    cursor: pointer;
-    height: 32px;
-    padding: 0px 16px;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: 500;
+.cart-buttons button , .cart-buttons-set button, .checkout, .removeAll{
+    appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 1% 5%;
+    
 }
 
-.cart-buttons button:hover {
-    background-color: rgba(0,0,0,0.6);
+.cart-buttons-set {
+    padding-top: 10%;
 }
 
-.cart-buttons button:active {
-    color: white;
-    background: none;
+.cart-buttons button:hover , .cart-buttons-set button:hover, .checkout:hover, .removeAll:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border-color: white;
+}
+
+.cart-buttons button:active , .cart-buttons-set button:active, .checkout:active, .removeAll:active{
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 .delete {
     position: absolute;
-    left: 77%;
+    left: 95%;
     fill: #c50000;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .delete:hover {
@@ -154,6 +208,7 @@
     fill: white;
     border-radius: 5px;
     padding: 3px;
+    transform: translateY(-2px);
 }
 
 .delete:active {
@@ -165,9 +220,17 @@
     padding-bottom: 10px;
 }
 
+.item-total-price-set {
+    margin-bottom: 0px;
+}
+
 .checkout-page {
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, .5);
+    color: white;
+    border-radius: 20px;
     margin: 10px;
     margin-left: 20%;
     margin-right: 20%;
