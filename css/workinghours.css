@@ -1,0 +1,49 @@
+.main-title {
+    font-weight:bold;
+    font-size: 3rem;
+    text-decoration-line:underline;
+}
+
+.subtitle {
+    padding-top: 10px;
+    align-items:right;
+    font-weight:bold;
+    font-size: 2.3rem;
+}
+
+section {
+    font-size:1.3rem;
+    color: white;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workinghours table{
+    color: white;
+    width: 100%;
+}
+  
+.workinghours th, td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid orange;
+}
+  
+.workinghours th {
+    background-color: red;
+    font-weight: bold;
+}
+
+.workinghours tbody th {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.workinghours td {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
