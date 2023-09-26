@@ -67,7 +67,7 @@
     margin-bottom: 20px;
 }
 
-.home-button , .checkout, .removeAll{
+.home-button , .checkout, .removeAll, .HomeBtn{
     background-color: white;
     color: black;
     border: none;
@@ -149,7 +149,7 @@
     margin-left: 10px;
 }
 
-.cart-buttons button , .cart-buttons-set button, .checkout, .removeAll{
+.cart-buttons button , .cart-buttons-set button, .checkout, .removeAll, .HomeBtn{
     appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
@@ -182,7 +182,7 @@
     padding-top: 10%;
 }
 
-.cart-buttons button:hover , .cart-buttons-set button:hover, .checkout:hover, .removeAll:hover{
+.cart-buttons button:hover , .cart-buttons-set button:hover, .checkout:hover, .removeAll:hover , .HomeBtn:hover{
     color: #fff;
     background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
@@ -190,7 +190,7 @@
     border-color: white;
 }
 
-.cart-buttons button:active , .cart-buttons-set button:active, .checkout:active, .removeAll:active{
+.cart-buttons button:active , .cart-buttons-set button:active, .checkout:active, .removeAll:active , .HomeBtn:active{
     box-shadow: none;
     transform: translateY(0);
 }
@@ -235,4 +235,8 @@
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
+}
+
+.cart-empty {
+    color:white;
 }
