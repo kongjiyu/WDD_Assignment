@@ -1,0 +1,40 @@
+.main-title {
+    font-weight:bold;
+    font-size: 3rem;
+    text-decoration-line:underline;
+}
+
+.subtitle {
+    padding-top: 10px;
+    font-weight:bold;
+    font-size: 2.3rem;
+}
+
+section  {
+    font-size:1.3rem;
+    color: white;
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location  {
+    font-size:1.3rem;
+    color: white;
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.map iframe {
+    padding-bottom: 20%;
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
