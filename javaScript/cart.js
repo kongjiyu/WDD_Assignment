@@ -83,10 +83,12 @@ let generateCartItems = () => {
         ShoppingCart.innerHTML =  ``;
         document.getElementById("checkout-page").innerHTML=``;
         label.innerHTML = `
-        <h2>Cart is Empty</h2>
-        <a href="header.html">
-            <button className="HomeBtn">Back to Home</button>
-        </a>
+        <div class="empty">
+            <h2 class="cart-empty">Cart is Empty</h2>
+            <a href="home.html">
+                <button class="HomeBtn">Back to Home</button>
+            </a>
+        </div>
         `;
         localStorage.setItem("setData", JSON.stringify(menuItemsData));
     }
@@ -167,9 +169,11 @@ let TotalAmount = () => {
         
 
         document.getElementById("checkout-page").innerHTML = `
+        <div class="checkout-page">
         <h2>Total Bill : RM ${amount}</h2>
         <button class="checkout" onclick="window.location.href='checkout.html';">Checkout</button>
         <button onclick="clearCart()" class="removeAll">Clear Cart</button>
+        </div>
         `;
     } else return;
 }
