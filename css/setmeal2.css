@@ -40,6 +40,19 @@
     font-weight: bold;
 }
 
+.modal button,#form>input,.amountcontro input{
+    border-radius: 20px;
+}
+
+.box-contro #amount{
+    width: fit-content;
+    height: 30px;
+}
+
+#form>input:hover,.modal button:hover{
+    opacity: 90%;
+}
+
 .modal-body {
     padding: 10px 15px;
 }
@@ -76,8 +89,7 @@
 
 input[type=radio] {
     --s: 1em;     /* control the size */
-    --c: #009688; /* the active color */
-    
+    --c: pink; /* the active color */
     height: var(--s);
     aspect-ratio: 1;
     border: calc(var(--s)/8) solid #939393;
@@ -115,7 +127,7 @@ input[type=radio] {
       background: none;
     }
   }
-  
+
 .radiocontro label {
     display:inline-flex;
     align-items:center;
