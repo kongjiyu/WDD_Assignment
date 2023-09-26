@@ -1,6 +1,6 @@
 .backwrapper{
     background-color: transparent;
-    width: 1200px;
+    width: 90%;
     margin: 100px auto;
     backdrop-filter: blur(40px);
     border-radius: 20px;
@@ -20,9 +20,7 @@
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
-    color: white;
-    
-   
+    color: white;  
 }
 .title h4 span{
     display: block;
@@ -48,7 +46,7 @@
     justify-content: space-between;
 }
 .single-menu{
-    flex-basis: 580px;
+    flex-basis: 50%;
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid white;
@@ -95,7 +93,6 @@ p{
     color: rgba(255, 255,255, 0.7);
     background-color: orange;
     font-size: 10px;
-    margin-left: 220px;
     width: 120px;
     height: 45px;
     box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;

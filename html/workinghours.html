@@ -8,6 +8,10 @@
     <link href="../css/header.css" rel="stylesheet"/>
     <link href="../css/cart.css" rel="stylesheet" />
     <link href="../css/workinghours.css" rel="stylesheet" />
+    <script src="../javaScript/header.js" defer></script>
+    <script src="../javaScript/home.js" defer></script>
+    <script src="../javaScript/data.js" defer></script>
+    <script src="../javaScript/main.js" defer></script>
 </head>
 
 <body>
@@ -163,8 +167,12 @@
                     <li><a href="offer.html">Offer</a></li>
                     <li><a class="btnLogin-popup">Membership</a></li>
                     <li><a href="workinghours.html">Working Hour</a></li>
+                    <li><a href="feedform.html">Feedback</a></li>
                     <li><a href="storelocation.html">Store Location</a></li>
+                    <li><a href="map.html">Map</a></li>
                     <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li></li>
                 </ul>
             </div>
         </div>
@@ -172,8 +180,12 @@
             <p>Copyright &copy;2023; Designed by <span class="designer">DCSY1S1G1 Noodle team</span></p>
         </div>
     </footer>
-
-    <script src="../javaScript/header.js"></script>
-    <script src="../javaScript/FAQ.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="NoodleBot"
+    agent-id="7f8ea74a-cd7d-4db8-8923-55f50d735263"
+    language-code="en"
+    ></df-messenger>
 </body>
 </html>
