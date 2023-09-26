@@ -16,42 +16,40 @@
 
 <body>
     <header class="mainHeader">
-        <a id="logo" href="#"><img src="../image/logo.png"/></a>
+        <a id="logo" href="home.html"><img src="../image/logo.png"/></a>
         <nav>
             <a class="bottomLine" href="home.html">Home</a>
             <a class="bottomLine" href="aboutUs.html">About Us</a>
             <a class="bottomLine" href="menu.html">Menu</a>
             <a class="bottomLine" href="offer.html">Offer</a>
-            <a class="bottomLine" href="storelocation.html">Store Location</a>
-            <a class="bottomLine" href="privacyPolicy.html">Privacy Policy</a>
-            <button id="login" class="btnLogin-popup">Membership</button>
+            <a class="bottomLine" href="feedform.html">Feedback</a>
+            <button id="loginbtn" class="btnLogin-popup">Membership</button>
             <a id="cart"><svg width="35" height="35" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" ></path></svg></a>
             <div class="total" id="total">0</div>
         </nav>
+        <audio src="../Music&Video/backgroundMusic.mp3" autoplay loop />
     </header>
-
-    
 
     <div class="wrapper">
         <span id="close" class="icon-close"><img src="../image/close2.png" width="25px" height="25px"/ ></span>
-        <div class="form-box login">
+        <div id="login" class="form-box login">
             <h2>Login</h2>
-            <form action="#" method="post" target="_blank">
+            <form onsubmit="alert('Log In Successful')">
                 <div class="input-box">
                     <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
-                    <input type="email" placeholder="" required />
+                    <input id="email" type="email" placeholder="" required />
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
-                    <input type="password" placeholder="" required />
+                    <input id="password" type="password" placeholder="" required />
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button id="logIn" type="submit" class="btn">Login</button>
                 <div class="login-register">
                     <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
                 </div>
@@ -60,7 +58,7 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="#" method="post" target="_blank">
+            <form onsubmit="alert('Register Successful')">
                 <div class="input-box">
                     <span id="icon"><img src="../image/username.png" alt="text" width="20px" height="20px" /></span>
                     <input type="text" placeholder="" required />
@@ -68,16 +66,16 @@
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/email.png" alt="email" width="27px" height="20px" /></span>
-                    <input type="email"  placeholder="" required/>
+                    <input id="email" type="email"  placeholder="" required/>
                     <label>Email<span id="required">*</span></label>
                 </div>
                 <div class="input-box">
                     <span id="icon"><img src="../image/password.png" width="27px" height="20px" /></span>
-                    <input type="password" placeholder="" required />
+                    <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="" required />
                     <label>Password<span id="required">*</span></label>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox" />I agree to the terms & conditions<span id="required">*</span></label>
+                    <label><input type="checkbox" required/>I agree to the terms & conditions<span id="required">*</span></label>
                 </div>
                 <button type="submit" class="btn">Register</button>
                 <div class="login-register">
