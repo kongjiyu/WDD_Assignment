@@ -328,8 +328,13 @@ footer{
 
 .footerNav ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
+}
+
+.footerNav ul li{
+    padding-bottom: 40px;
 }
 
 .footerNav ul li a{
@@ -351,6 +356,7 @@ footer{
     padding: 20px;
     padding-top: 0;
     text-align: center;
+    margin-top: -20px;
 }
 
 .footerBottom p{

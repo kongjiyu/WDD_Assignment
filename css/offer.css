@@ -7,7 +7,7 @@
 }
 
 .divider{
-    width: 70px;
+    width: 150px;
     height: 4px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -32,7 +32,7 @@
     color: white;
     width: 20%;
     margin: 100px;
-    height: 550px;
+    height: fit-content;
     background-color: rgba(0,0,0,0.1);
     border-radius: 20px;
     box-shadow: 0 0 50px rgba(255,255,255,0.5);
@@ -43,4 +43,8 @@
 
 .card:hover{
     transform: translateY(-2%);
+}
+
+.card-description{
+    padding: 0 10px;
 }
