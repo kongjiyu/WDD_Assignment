@@ -101,6 +101,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
+  margin-bottom: 2%;
 }
 
 .submit-form:disabled {
