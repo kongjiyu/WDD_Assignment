@@ -14,6 +14,7 @@ let generateDrinkshMenu =() =>{
                 <h4>${name}<span>RM${price}</span></h4>
                 <p>${desc}</p>
                     <button class="buttonmain" onclick="increment(${id})" class="addToCart">Add To Cart</button>
+                    <div style="visibility:hidden;" id=${id}>${search.item === undefined? 0: search.item}</div>
             </div>
         </div>
         `;
