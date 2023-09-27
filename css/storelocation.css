@@ -19,13 +19,12 @@
 
 .state{
     color: white;
-    margin-left:200px ;
     margin-bottom: 15px;
 }
 
 .cardLocation{
      background: white;
-     width:270px;
+     width:fit-content;
      height: 400px;
      margin: 10px;
      border-radius: 15px;
@@ -118,12 +117,11 @@
 }
 
 .content {
-    max-width: 800px;
+    width: 60%;
     margin-top: 1px;
     padding-bottom: 1px;
     border-bottom: 2px double white;
     cursor: pointer;
-    align-items: center;
 }
 
 .q {
@@ -139,7 +137,9 @@
 .a {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.4s ease;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: max-height .5s ease;
 }
 
 .a p {

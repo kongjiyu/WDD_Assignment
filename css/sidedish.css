@@ -14,21 +14,41 @@
     border-bottom: 10px solid white;
     border-radius: 20px;
 }
+.title .backward button{
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    border: none;
+    background-color: transparent;
+    transition: all .5s ease;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.title .backward button, .title path{
+    transition: all .5s ease;
+}
+
+.title .backward:hover button{
+    background-color: white;
+}
+
+.title .backward:hover path{
+    stroke: red;
+}
+
 .title h4{
     text-transform: capitalize;
     font-size: 36px;
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
-    color: white;
-    
-   
+    color: white;  
 }
 .title h4 span{
     display: block;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: -15px;
     color: white;
 }
 .title h4:before{

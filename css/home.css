@@ -51,11 +51,10 @@ body{
     height: 100%;
     transform: translateY(0);
     box-shadow: none;
-    z-index: 1;
 }
 
 .item:nth-child(3){
-    left: 90%;
+    left: 100%;
 }
 
 .item:nth-child(4){
