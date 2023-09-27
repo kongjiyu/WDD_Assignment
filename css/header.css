@@ -371,6 +371,11 @@ footer{
     margin: 0px 5px;
     color: yellow;
     font-size: 2em;
+    transition: all .5s ease;
+}
+
+.designer:hover{
+    opacity: 1;
 }
 
 .reveal{

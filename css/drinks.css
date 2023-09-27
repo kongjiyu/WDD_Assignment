@@ -16,7 +16,7 @@
 }
 .title .backward button{
     position: absolute;
-    top: 6%;
+    margin-top: 50px;
     left: 10%;
     border: none;
     background-color: transparent;
