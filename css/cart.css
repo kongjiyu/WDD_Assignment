@@ -40,27 +40,6 @@
     white-space:nowrap; 
     padding-bottom:13px;
 }
-#cart-title::before {
-    background-color: #c50000;
-    content: '';
-    display: block;
-    height: 3px;
-    width: 75px;
-    margin-bottom: 5px;
-    position: absolute;
-    right: 51%;
-}
-
-#cart-title::after {
-    background-color: #c50000;
-    content: '';
-    position: absolute;
-    display: block;
-    left:52%;
-    margin-top: 5px;
-    height: 3px;
-    width: 75px;
-}
 
 .text-center {
     text-align: center;
