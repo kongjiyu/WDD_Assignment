@@ -129,7 +129,6 @@ body{
     font-size: 25px;
     border-radius: 50%;
     font-weight: bold;
-    border: 1px solid #555;
     margin: 0 25px;
     transition: .5s;
 }
@@ -237,5 +236,16 @@ body{
     margin-bottom: 8px;
 }
 
+.video-container{
+    margin-bottom: 100px;
+}
 
+.video-container video{
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 
+.divider.video{
+    width: 100px;
+}
