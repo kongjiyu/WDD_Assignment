@@ -269,7 +269,7 @@ let drinksItemsData = [{
     img:"../image/iced-lemon-tea.jpg"
 },
 {
-    id:"cofee",
+    id:"coffee",
     name:"Iced Coffee",
     price:"3.50",
     desc:"A cool and invigorating beverage that gives you a refreshing jolt of energy with its rich and bold flavor. Served over ice and a splash of milk or flavored syrups, it offers a delightful combination of smoothness and a hint of bitterness.",
